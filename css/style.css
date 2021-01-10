@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+    background: #2e303c;
+    margin: 0;
+}
+
+.calc {
+    background: #fff;
+    padding: 20px;
+}
+
+.screen {
+    max-width: 290px;
+    color: #424242;
+    text-align: right;
+    font-size: 42px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+    line-height: 1.6;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    outline: 0;
+    cursor: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.screen::placeholder {
+    color: #424242;
+}
+
+table {
+    width: 100%;
+    background: #fff;
+}
+
+table tr td {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    color: #464749;
+    font-size: 26px;
+    line-height: 2.3;
+    text-align: center;
+    border-radius: 8px;
+    background: #f3f8fc;
+    transition: all .2s ease;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 16px;
+    margin-bottom: 8px;
+}
+
+table tr td:last-child {
+    margin-right: 0;
+}
+
+table tr:last-child td {
+    margin-bottom: 0;
+}
+
+table tr td:hover {
+    background: #d8dde0;
+}
+
+td[colspan="2"] {
+    width: 136px;
+}
+
+.bg-green {
+    color: #fffcf6;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 2;
+    background: #52c9dd;
+}
+
+.bg-green:hover {
+    background: #44abbd;
+}
